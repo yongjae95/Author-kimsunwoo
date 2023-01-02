@@ -1,0 +1,426 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Pretendard';
+}
+
+html,
+body {
+    /* Start https://www.cursors-4u.com */
+    cursor: url(https://cur.cursors-4u.net/food/foo-6/foo506.png), auto !important;
+    /* End https://www.cursors-4u.com */
+}
+
+#wrap {
+    width: 100%;
+    height: 2300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header_bg{
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    z-index: 999999;
+    margin: 0 auto;
+    position: fixed;
+    border-bottom: 1px solid #ddd;
+}
+
+.header{
+    width: 1400px;
+    height: 180px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.ballon{
+    width: 80px;
+    height: 25px;
+    background-color: #8cdc9f;
+    position: absolute;
+    top: 50px;
+    right: 85px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.ballon:after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -9px;
+    border-left: 15px solid #8cdc9f;
+    border-top: 10px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.ballon p{
+    margin-top: 6px;
+    margin-left: 23px;
+}
+
+.ballon.none{
+    display: none;
+}
+
+.header h1 {
+    width: 200px;
+    height: 74px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 27px;
+    float: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Felix Titling';
+}
+
+.header img {
+    width: 74px;
+    height: 74px;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 53px;
+}
+
+
+.slide {
+    margin: 0 auto;
+    width: 100%;
+    height: 240px;
+    background-image: url(../images/profile_slide.png);
+    background-size: cover;
+    position: relative;
+    top: 180px;
+}
+
+.main {
+    margin: 0 auto;
+    width: 1400px;
+    height: 720px;
+    position: relative;
+    left: 115px;
+    margin-top: 140px;
+    top: 110px;
+}
+
+.dodo_sunwoo1 {
+    width: 1400px;
+    height: 20px;
+    color: #6a6a6a;
+    margin-left: 115px;
+    position: absolute;
+    font-size: 13px;
+    top: -30px;
+    left: -120px;
+}
+
+.dodo_sunwoo2 {
+    width: 1400px;
+    height: 50px;
+    color: #111;
+}
+
+.main_img {
+    position: absolute;
+    width: 570px;
+    height: 750px;
+    margin-right: 70px;
+}
+
+.main_img img{
+    height: 750px;
+}
+
+.txt_name {
+    position: absolute;
+    width: 500px;
+    top: 60px;
+    left: 640px;
+    font-family: Pretendard, cursive;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.txt_name span{
+    font-weight: 300;
+}
+
+.txt_1 {
+    position: absolute;
+    width: 500px;
+    height: 210px;
+    top: 120px;
+    left: 640px;
+    font-size: 14px;
+    line-height: 18px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.txt_1 span{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.txt_2 {
+    position: absolute;
+    width: 500px;
+    top: 370px;
+    left: 640px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.txt_2 span {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.main_b {
+    margin-top: 220px;
+    width: 700px;
+    height: 10px;
+    background-color: rgba(251, 245, 208, 1);
+
+}
+
+
+.contents {
+    width: 1400px;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*회전 이미지*/
+
+.circle{
+    position: absolute;
+    right: 225px;
+    z-index: 9999;
+    top: 75px;
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.imgbox_list {
+    width: 550px;
+    height: 700px;
+    float: left;
+    position: relative;
+    margin-top: 150px;
+}
+
+.imgbox_list li {
+    position: absolute;
+    right: 0;
+}
+
+.imgbox_list li:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.imgbox_list li.pop2 {
+    bottom: 75px;
+}
+
+.pop1 img, .pop2 img{
+    width: 245px;
+    height: 300px;
+}
+
+.pop3 img{
+    width: 500px;
+    height: 626px;
+}
+
+
+.rotate {
+    position: absolute;
+    top: -60px;
+    right: -60px;
+}
+
+.rotate img {
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.footer_bg{
+    width: 100%;
+    background-color: #2b282d;
+}
+
+.footer{
+    width: 1400px;
+    height: 147px;
+    margin: 0 auto;
+    background-color: #2b282d;
+    color: white;
+    position: relative;
+    margin: 0 auto;
+}
+
+.footer h1{
+    font-family: 'Felix Titling';
+    font-weight: 100;
+    color: #777;
+    width: 230px;
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 1.7rem;
+    margin-left: 270px;
+    position: absolute;
+    top: 55px;
+    border-right: 1px solid #777;
+}
+
+.footer_txt{
+    width: 450px;
+    height: 60px;
+    position: absolute;
+    top: 55%;
+    left: 56%;
+    transform: translate(-50%,-50%);
+}
+
+.footer_txt>h3, .footer_txt>p{
+    width: 500px;
+    height: 20px;
+    font-size: 0.7rem;
+}
+
+.footer_txt h3{
+    cursor: pointer;
+}
+
+.footer_txt p{
+    font-weight: 100;
+}
+
+.footer_sns{
+    width: 150px;
+    height: 25px;
+    position: absolute;
+    right: 200px;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.footer_sns li{
+    float: left;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #555;
+    position: relative;
+}
+
+.footer_sns img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.footer_sns li:hover{
+    background-color: #2b282d;
+}
+
+.footer_sns li:last-child {
+    margin-right: 0;
+}
+
+
+/*공지사항 팝업 시작*/
+
+.modal {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 999;
+    display: none;
+}
+
+.modal img{
+    width: 100%;
+}
+
+.modal_x {
+    width: 500px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.7);
+    line-height: 30px;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+
+.modal_x p {
+    color: #fff;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.modal_bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+    display: none;
+}
